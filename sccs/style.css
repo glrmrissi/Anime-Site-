@@ -1,0 +1,47 @@
+
+body {
+  background-color: gray;
+}
+
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  border-bottom: 2px solid black;
+}
+
+.alpha { 
+  color: purple; 
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+}
+.image__japon-1 {
+  display: flex;
+  height: 40vh;
+  width: 50vh;
+  border: rgb(255, 0, 0) 3px solid;
+  margin: 1em;
+}
+
+.image__japon-2 {
+  display: flex;
+  height: 40vh;
+  width: 50vh; 
+  border: rgb(102, 0, 255) 3px solid;
+  margin: 1em;
+}
+
+img {
+  flex: 1;
+  width: 38vh;
+  height: 28vh;
+  border: rgb(36, 39, 39) 3px solid;
+  border-radius: 3px;
+}
+
