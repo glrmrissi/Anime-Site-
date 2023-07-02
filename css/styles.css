@@ -3,6 +3,28 @@ body {
     background-color: var(--bs-blue);
 }
 
+body::-webkit-scrollbar {
+    width: 4px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7777776a;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-Item a{
+    padding-left: 1rem;
+}
+
+.divSearch {
+    display: block;
+    width: 30vh;
+}
 .divEps {
     padding-top: 1em;
 }
