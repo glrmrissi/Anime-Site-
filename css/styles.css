@@ -1,6 +1,6 @@
 
 body {
-    background-color: var(--bs-blue);
+    background-color: var(--bs-dark);
 }
 
 body::-webkit-scrollbar {
