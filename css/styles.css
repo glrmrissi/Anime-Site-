@@ -1,37 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 body {
-    background-color: var(--bs-dark);
+    background: linear-gradient(180deg, rgba(0,0,0,0.6502801804315477) 2%, rgba(53,55,134,0.6474790599833684) 46%, rgba(60,17,103,0.633473457742472) 100%),
+    url(../img/rent-a-girlfriend/capa-2.webp);
+    background-size: auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 body::-webkit-scrollbar {
     width: 4px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0)
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #7777776a;
-    border-radius: 5px;
+    border-radius: 5px;  
 }
 
 ul {
     list-style: none;
 }
 
-.nav-Item a{
+.nav-item {
+    padding: 1em;
+    align-items: center;
+    text-align: center;
+}
+.nav-item a{
     padding-left: 1rem;
+    text-decoration: none;
+    font-size: 1.1em;
 }
 
 .divSearch {
+    margin-top: 1em;
+    margin-left: 50em;
     display: block;
     width: 30vh;
+}
+
+.divSearch input{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
 }
 .divEps {
     padding-top: 1em;
 }
+
 .divEps img{
-    width: 500px;
-    height: 250px;
-    border-radius: 33px;
+    width: 40vh;
+    height: 25vh;
+    border-radius: 3vh;
 }
 .title-container {
     position: relative;
@@ -39,10 +64,11 @@ ul {
 }
 
 .tamanho img {
-    width: 295px;
-    height: 437px;
-    border-radius: 30px;
+    width: 27vh;
+    height: 40vh;
+    border-radius: 3vh;
 }
+
 .image-block {
     position: absolute;
     border-radius: 33px;
