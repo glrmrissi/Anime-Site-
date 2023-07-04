@@ -28,14 +28,24 @@ ul {
 .divEps {
     padding-top: 1em;
 }
-
+.divEps img{
+    width: 500px;
+    height: 250px;
+    border-radius: 33px;
+}
 .title-container {
     position: relative;
     display: inline-block;
 }
 
+.tamanho img {
+    width: 295px;
+    height: 437px;
+    border-radius: 30px;
+}
 .image-block {
     position: absolute;
+    border-radius: 33px;
     top: 50%;
     left: 0;
     width: 100%;
