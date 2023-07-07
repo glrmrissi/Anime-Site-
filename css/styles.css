@@ -25,7 +25,8 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;  
 }
 
-ul {
+ul, a{
+    text-decoration: none;
     list-style: none;
 }
 .nav-bar {
@@ -150,4 +151,17 @@ ul {
     height: 30vh;
 }
 
+.voltar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.voltar img{
+    width: 100px;
+    height: auto;
+    padding: 1em;
+    border: rgb(52, 50, 179) solid 2px;
+    border-radius: 9em;
+    background-color: rgb(0, 140, 255);
+}
 
