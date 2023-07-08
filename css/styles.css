@@ -29,6 +29,9 @@ ul, a{
     text-decoration: none;
     list-style: none;
 }
+ div {
+    border: red solid 1px;
+}
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -63,6 +66,9 @@ ul, a{
 }
 
 @media screen and (max-width: 730px) {
+    body {
+        overflow-x: hidden;
+    }
     .nav-bar {
         padding: 1rem 4rem;
     }
@@ -77,14 +83,14 @@ ul, a{
     .menu-mobile ul{
         display: flex;
         flex-direction: column;
-        text-align: center;
-        padding-bottom: 1rem;
+        
     }
 
     .menu-mobile .nav-item{
         display: block;
         padding-top: 1.2rem;
     }
+
 
     .menu-mobile-icon button {
         background: transparent;
@@ -93,10 +99,29 @@ ul, a{
 
     .open {
         display: block;
+        position: absolute;
+        top: 0%;
+        left: 40%;
     }
+
 }
 
+@media screen and (max-width: 576px) {
+    .cell img{
+        width: 100%;
+    }
+    .cell:not(:first-child) {
+      display: none;
+    }
+  }
 
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+}
 
 
 .divSearch {
@@ -122,7 +147,7 @@ ul, a{
 .divEps img{
     width: 40vh;
     height: 25vh;
-    border-radius: 3vh;
+    border-radius: 1vh;
 }
 .title-container {
     position: relative;
@@ -132,11 +157,11 @@ ul, a{
 .tamanho img {
     width: 27vh;
     height: 40vh;
-    border-radius: 3vh;
+    border-radius: 1vh;
 }
 
 .image-block {
-    position: absolute;
+    position: absolute; 
     border-radius: 33px;
     top: 50%;
     left: 0;
@@ -160,8 +185,4 @@ ul, a{
     width: 100px;
     height: auto;
     padding: 1em;
-    border: rgb(52, 50, 179) solid 2px;
-    border-radius: 9em;
-    background-color: rgb(0, 140, 255);
 }
-
