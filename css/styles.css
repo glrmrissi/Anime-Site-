@@ -68,6 +68,7 @@ ul, a{
     display: none;
 }
 
+
 @media screen and (max-width: 730px) {
     body {
         overflow-x: hidden;
