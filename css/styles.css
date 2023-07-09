@@ -168,10 +168,12 @@ ul, a{
 }
 
 .divEps img{
-    width: 40vh;
-    height: 25vh;
+    width: 47vh;
+    height: 29vh;
     border-radius: 1vh;
+    border:solid 2px rgb(63, 63, 63);
 }
+
 .title-container {
     position: relative;
     display: inline-block;
