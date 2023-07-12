@@ -11,6 +11,9 @@ body {
     background: radial-gradient(circle, rgba(2,0,36,1) 100%);
 }
 
+body.dark {
+    background: #303030;
+}
 
 body::-webkit-scrollbar {
     width: 4px;
@@ -74,6 +77,40 @@ ul, a{
 }
 .rotate img:hover{
     transform: rotate(720deg);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked + .label .ball {
+    transform: translateX(24px);
+}
+
+.label {
+    background-color: #000000;
+    border-radius: 5vh;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+ background-color: #fff;
+ border-radius: 50%;
+ position: absolute;
+ top: 2px;
+ left: 2px;
+ height: 22px;
+ width: 22px;
+ transform: translateX(0px);
+ transition: transform 0.2s linear;
 }
 .menu-mobile-icon{
     display: none;
