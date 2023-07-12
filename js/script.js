@@ -8,3 +8,12 @@ function menuShow() {
         document.querySelector('.icon').src = "https://img.icons8.com/ios-filled/50/000000/delete-sign--v1.png"
     }
 }
+
+const chk = document.getElementById('chk')
+const navItem = document.getElementById('nav-item')
+
+chk.addEventListener('change', () => {
+
+    document.body.classList.toggle('dark');
+    navItem.classList.toggle('dark');
+})

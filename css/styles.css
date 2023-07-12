@@ -7,8 +7,7 @@
 }
 
 body {
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 100%);
+    background: rgb(255, 255, 255);
 }
 
 body.dark {
@@ -54,12 +53,27 @@ ul, a{
     text-decoration: none;
     font-size: 1.15rem;
     font-weight: 400;
+    color: #000000;
+    transition: 1s ease-in-out;
+}
+
+.nav-item:hover {
+    transform: scale();
+    color: rgb(160, 160, 160);
+    font-size: 1.1rem;
+}
+
+.nav-item a.dark{
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 400;
     color: #fff;
     transition: 1s ease-in-out;
 }
-.nav-item a:hover {
+
+.nav-item a:hover.dark {
     transform: scale();
-    color: rgb(160, 160, 160);
+    color: rgb(255, 255, 255);
     font-size: 1.1rem;
 }
 
@@ -111,6 +125,14 @@ ul, a{
  width: 22px;
  transform: translateX(0px);
  transition: transform 0.2s linear;
+}
+
+.fa-moon {
+    color: rgb(175, 175, 175);
+}
+
+.fa-sun {
+    color: yellow;
 }
 .menu-mobile-icon{
     display: none;
