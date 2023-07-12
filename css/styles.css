@@ -57,13 +57,13 @@ ul, a{
     transition: 1s ease-in-out;
 }
 
-.nav-item:hover {
+.nav-item a:hover {
     transform: scale();
-    color: rgb(160, 160, 160);
+    color: rgb(18, 22, 199);
     font-size: 1.1rem;
 }
 
-.nav-item a.dark{
+.nav-item, .dark a{
     text-decoration: none;
     font-size: 1.15rem;
     font-weight: 400;
@@ -71,7 +71,7 @@ ul, a{
     transition: 1s ease-in-out;
 }
 
-.nav-item a:hover.dark {
+.nav-item, .dark a:hover {
     transform: scale();
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
@@ -91,6 +91,10 @@ ul, a{
 }
 .rotate img:hover{
     transform: rotate(720deg);
+}
+.chk-box {
+    display: flex;
+    align-items: center;
 }
 
 .checkbox {
@@ -165,7 +169,8 @@ ul, a{
     }
     
     .menu-mobile-icon {
-        display: block;
+        display: flex;
+        margin-left: 50px;
     }
     .menu-mobile ul, a{
         display: flex;
@@ -189,7 +194,7 @@ ul, a{
 
     .open {
         display: block;
-        background-color: #303030;
+        background-color: transparent;
         border-radius: 3vh;
         top: 0%;
         left: 40%;
