@@ -9,11 +9,13 @@
 body {
     background: rgb(255, 255, 255);
     scroll-behavior: smooth;
+    transition: 1s;
 }
 
 body.dark {
     background: #1d1d1d;
     scroll-behavior: smooth;
+    transition: 1s;
 }
 
 body::-webkit-scrollbar {
@@ -69,7 +71,7 @@ ul, a{
     font-size: 1.1rem;
 }
 
-.nav-item, .dark a{
+.nav-item, .dark a {
     text-decoration: none;
     font-size: 1.15rem;
     font-weight: 400;
@@ -165,12 +167,137 @@ ul, a{
 .cell img:hover{  
     transition: all 0.1s ease-in-out;
     padding: 2px;
-    -webkit-filter: blur(5%);
-    -moz-filter: blur(5%);
-    -o-filter: blur(5%);
-    -ms-filter: blur(5%);
-    filter: blur(5%);
+    -webkit-filter: contrast(104%);
+    -moz-filter: contrast(104%);
+    -o-filter: contrast(104%);
+    -ms-filter: contrast(104%);
+    filter: contrast(104%);
     cursor: pointer;
+}
+
+.title-container{
+    padding: 10px 0px 0px 0px;
+}
+.title-container img:hover{
+    transition: all 0.1s ease-in-out;
+    padding: 2px;
+    cursor: pointer;
+}
+.img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    width: 100%;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.divSearch {
+    margin-top: 1em;
+    margin-left: 50em;
+    display: block;
+    width: 30vh;
+}
+
+.divSearch input{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+}
+.icon-search {
+    padding-left: 25px;
+    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
+    background-size: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next{
+    background-color: #63636341;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.divEps {
+    padding-top: 1em;
+}
+
+.divEps img{
+    width: 100%;
+    height: 27vh;
+    border-radius: 1vh;
+}
+
+.divEps img:hover{
+    -webkit-filter: contrast(104%);
+    -moz-filter: contrast(104%);
+    -o-filter: contrast(104%);
+    -ms-filter: contrast(104%);
+    filter: contrast(104%);
+}
+
+.title-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tamanho img {
+    width: 27vh;
+    height: 40vh;
+    border-radius: 1vh;
+}
+
+/* .image-block {
+    position: absolute; 
+    border-radius: 33px;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff; 
+    padding-bottom: 1em;
+    margin: 0;
+} */
+#btnTop {
+    display: flex;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #2727274f;
+    border-radius: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.arrow {
+    border: solid #FFF;
+    border-width: 0px 6px 6px 0;
+    padding: 6px;
+    align-items: center;
+    display: inline-block;
+}
+.up {
+    transform: rotate(-135deg);
+}
+.dark hr {
+    color: #fff;
+    transition: tranform 1s linear;
+}
+.dark li {
+    color: #fff;
+    transition: tranform 1s linear;
+}
+.page-footer {
+    height: 30vh;
 }
 
 @media screen and (max-width: 730px) {
@@ -230,107 +357,4 @@ ul, a{
     .cell:not(:first-child) {
       display: none;
     }
-  }
-.title-container{
-    padding: 10px 0px 0px 0px;
-}
-.title-container img:hover{
-    transition: all 0.1s ease-in-out;
-    padding: 2px;
-    cursor: pointer;
-}
-.img-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    width: 100%;
-}
-
-
-.divSearch {
-    margin-top: 1em;
-    margin-left: 50em;
-    display: block;
-    width: 30vh;
-}
-
-.divSearch input{
-    background-color: rgb(255, 255, 255);
-    color: #000000;
-}
-.icon-search {
-    padding-left: 25px;
-    background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
-    background-size: 20px;
-}
-
-.carousel-control-prev,
-.carousel-control-next{
-    background-color: #63636341;
-    width: 6vh;
-    height: 6vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.divEps {
-    padding-top: 1em;
-}
-
-.divEps img{
-    width: 100%;
-    height: 27vh;
-    border-radius: 1vh;
-}
-
-.title-container {
-    position: relative;
-    display: inline-block;
-}
-
-.tamanho img {
-    width: 27vh;
-    height: 40vh;
-    border-radius: 1vh;
-}
-
-/* .image-block {
-    position: absolute; 
-    border-radius: 33px;
-    top: 50%;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff; 
-    padding-bottom: 1em;
-    margin: 0;
-} */
-#btnTop {
-    display: flex;
-    position: fixed;
-    right: 40px;
-    bottom: 50px;
-    width: 50px;
-    height: 50px;
-    background-color: #2727274f;
-    border-radius: 50%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.arrow {
-    border: solid #FFF;
-    border-width: 0px 6px 6px 0;
-    padding: 6px;
-    align-items: center;
-    display: inline-block;
-}
-.up {
-    transform: rotate(-135deg);
-}
-.page-footer {
-    height: 30vh;
 }
