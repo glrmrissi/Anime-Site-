@@ -25,7 +25,7 @@ btn.addEventListener("click", function(){
 })
 
 function ocultar(){
-    if(window.scrollY > 10) {
+    if (window.scrollY > 10) {
         btn.style.display = "flex"
     } else {
         btn.style.display = "none"

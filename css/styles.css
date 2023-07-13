@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap');
 
+:root {
+    --blue-: #1216c7;
+    --background: #e9e9e9;
+    --background-dark: #1d1d1d;
+    --grey: #63636341;  
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,7 +14,7 @@
 }
 
 body {
-    background: rgb(255, 255, 255);
+    background: #e9e9e9;
     scroll-behavior: smooth;
     transition: 1s;
 }
@@ -20,7 +27,7 @@ body.dark {
 
 body::-webkit-scrollbar {
     width: 9px;
-    background-color: rgba(255, 255, 255, 0)
+    background-color: #ffffff00
 }
 
 body::-webkit-scrollbar-thumb {
@@ -34,6 +41,7 @@ ul, a{
     padding: 0;
     margin: 0;
 }
+
 /* div {
     border: red solid 1px;
 } */
@@ -57,6 +65,7 @@ ul, a{
 .nav-item {
     margin: 0 25px;
 }
+
 .nav-item a{
     text-decoration: none;
     font-size: 1.15rem;
@@ -67,7 +76,7 @@ ul, a{
 
 .nav-item a:hover {
     transform: scale();
-    color: rgb(18, 22, 199);
+    color: #1216c7;
     font-size: 1.1rem;
 }
 
@@ -91,6 +100,7 @@ ul, a{
     display: flex;
     animation: rotateAnimation 120s infinite;
 }
+
 .rotate img{
     width: 100px;
     height: auto;
@@ -98,9 +108,11 @@ ul, a{
     transition: all 1s  ease-in-out;
     cursor: pointer;
 }
+
 .rotate img:hover{
     transform: rotate(720deg);
 }
+
 @keyframes rotateAnimation {
     0% {
         transform: rotate(0deg);
@@ -119,6 +131,7 @@ ul, a{
     opacity: 0;
     position: absolute;
 }
+
 .checkbox:checked + .label .ball {
     transform: translateX(24px);
 }
@@ -138,15 +151,15 @@ ul, a{
 }
 
 .label .ball {
- background-color: #fff;
- border-radius: 50%;
- position: absolute;
- top: 2px;
- left: 2px;
- height: 22px;
- width: 22px;
- transform: translateX(0px);
- transition: transform 0.2s linear;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
 }
 
 .fa-moon {
@@ -156,6 +169,7 @@ ul, a{
 .fa-sun {
     color: yellow;
 }
+
 .menu-mobile-icon{
     display: none;
 }
@@ -172,12 +186,14 @@ ul, a{
     -o-filter: contrast(104%);
     -ms-filter: contrast(104%);
     filter: contrast(104%);
+    filter: grayscale(50%);
     cursor: pointer;
 }
 
 .title-container{
     padding: 10px 0px 0px 0px;
 }
+
 .title-container img:hover{
     transition: all 0.1s ease-in-out;
     padding: 2px;
@@ -208,6 +224,7 @@ ul, a{
     background-color: rgb(255, 255, 255);
     color: #000000;
 }
+
 .icon-search {
     padding-left: 25px;
     background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat left;
@@ -223,6 +240,7 @@ ul, a{
     top: 50%;
     transform: translateY(-50%);
 }
+
 .divEps {
     padding-top: 1em;
 }
@@ -239,6 +257,7 @@ ul, a{
     -o-filter: contrast(104%);
     -ms-filter: contrast(104%);
     filter: contrast(104%);
+    filter: grayscale(50%);
 }
 
 .title-container {
@@ -268,34 +287,44 @@ ul, a{
     position: fixed;
     right: 40px;
     bottom: 50px;
-    width: 50px;
-    height: 50px;
-    background-color: #2727274f;
+    width: 40px;
+    height: 40px;
+    background-color: #27272734;
     border-radius: 50%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+
+#btnTop:hover {
+    background-color: blue;
 }
 
 .arrow {
     border: solid #FFF;
-    border-width: 0px 6px 6px 0;
-    padding: 6px;
+    border-width: 0px 4px 4px 0;
+    border-radius: 1px;
+    padding: 4px;
     align-items: center;
     display: inline-block;
 }
+
 .up {
     transform: rotate(-135deg);
 }
+
 .dark hr {
     color: #fff;
     transition: tranform 1s linear;
 }
+
 .dark li {
     color: #fff;
     transition: tranform 1s linear;
 }
+
 .page-footer {
     height: 30vh;
 }
