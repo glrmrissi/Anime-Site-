@@ -17,8 +17,8 @@ body.dark {
 }
 
 body::-webkit-scrollbar {
-    width: 4px;
-    background-color: rgba(0, 0, 0, 0)
+    width: 9px;
+    background-color: rgba(255, 255, 255, 0)
 }
 
 body::-webkit-scrollbar-thumb {
@@ -87,17 +87,27 @@ ul, a{
     width: 100px;
     height: auto;
     display: flex;
-    transition: all 5s ease-in-out;
+    animation: rotateAnimation 120s infinite;
 }
 .rotate img{
     width: 100px;
     height: auto;
     display: flex;
     transition: all 1s  ease-in-out;
+    cursor: pointer;
 }
 .rotate img:hover{
     transform: rotate(720deg);
 }
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(21600deg);
+    }
+}
+
 .chk-box {
     display: flex;
     align-items: center;
@@ -160,6 +170,7 @@ ul, a{
     -o-filter: blur(5%);
     -ms-filter: blur(5%);
     filter: blur(5%);
+    cursor: pointer;
 }
 
 @media screen and (max-width: 730px) {
@@ -226,6 +237,7 @@ ul, a{
 .title-container img:hover{
     transition: all 0.1s ease-in-out;
     padding: 2px;
+    cursor: pointer;
 }
 .img-wrapper {
     display: flex;
@@ -301,7 +313,7 @@ ul, a{
     bottom: 50px;
     width: 50px;
     height: 50px;
-    background-color: #ff00004f;
+    background-color: #2727274f;
     border-radius: 50%;
     flex-direction: row;
     align-items: center;
