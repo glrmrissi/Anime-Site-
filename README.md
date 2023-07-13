@@ -18,9 +18,7 @@ JavaScript é uma linguagem de programação que permite adicionar interatividad
 ## Bootstrap
 
 Bootstrap é uma biblioteca de estilos que fornece um conjunto de componentes e estilos predefinidos. Embora seja útil para agilizar o desenvolvimento, entendo que, para criar um site exclusivo, é necessário personalizar os estilos além do fornecido pelo Bootstrap.
-## Sass
 
-Sass é uma linguagem de estilo que pode ser usada para criar folhas de estilo mais eficientes e organizadas. Estou interessado em aprender como usar variáveis e outros recursos do Sass para melhorar meu fluxo de trabalho no CSS.
 ## PHP
 
 PHP é uma linguagem de programação amplamente utilizada para desenvolvimento web e gestão de dados em um servidor. Minha experiência com PHP é limitada, mas estou animado para aprender mais sobre sua aplicação e recursos.
