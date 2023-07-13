@@ -8,10 +8,12 @@
 
 body {
     background: rgb(255, 255, 255);
+    scroll-behavior: smooth;
 }
 
 body.dark {
     background: #1d1d1d;
+    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -33,6 +35,8 @@ ul, a{
 /* div {
     border: red solid 1px;
 } */
+
+
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -251,7 +255,7 @@ ul, a{
 
 .carousel-control-prev,
 .carousel-control-next{
-    background-color: #636363;
+    background-color: #63636341;
     width: 6vh;
     height: 6vh;
     border-radius: 50%;
@@ -290,18 +294,31 @@ ul, a{
     padding-bottom: 1em;
     margin: 0;
 } */
+#btnTop {
+    display: flex;
+    position: fixed;
+    right: 40px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    background-color: #ff00004f;
+    border-radius: 50%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
 
+.arrow {
+    border: solid #FFF;
+    border-width: 0px 6px 6px 0;
+    padding: 6px;
+    align-items: center;
+    display: inline-block;
+}
+.up {
+    transform: rotate(-135deg);
+}
 .page-footer {
     height: 30vh;
-}
-
-.voltar {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.voltar img{
-    width: 100px;
-    height: auto;
-    padding: 1em;
 }
