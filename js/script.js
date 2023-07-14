@@ -18,16 +18,19 @@ chk.addEventListener('change', () => {
     navItem.classList.toggle('dark');
 })
 
-const btn = document.getElementById('btnTop')
+let btn = document.getElementById('btnTop')
 
 btn.addEventListener("click", function(){
     window.scrollTo(0, 0)
 })
 
-function ocultar(){
-    if (window.scrollY > 10) {
-        btn.style.display = "flex"
+function ocultar() {
+    if (window.scrollY < 10) {
+        btn.style.display = "none";
     } else {
-        btn.style.display = "none"
+        btn.style.display = "flex";
     }
 }
+btn.style.transition = "opacity 0.3s ease";
+
+window.addEventListener("scroll", ocultar);
