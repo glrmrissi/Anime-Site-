@@ -178,12 +178,28 @@ ul, a{
 .menu-mobile {
     display: none;
 }
-.cell img {
-    width: 100%;
+
+.cell {
+    height: 46vh;
+    position: relative;
+    border-radius: 1vh;
+    overflow: hidden;
 }
+
+.cell img {
+    margin-top: 10px;
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
 .cell img:hover{  
     transition: all 0.1s ease-in-out;
-    padding: 2px;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
+    width: 547px;
     -webkit-filter: contrast(104%);
     -moz-filter: contrast(104%);
     -o-filter: contrast(104%);
@@ -193,16 +209,7 @@ ul, a{
     cursor: pointer;
 }
 
-.title-container{
-    padding: 10px 0px 0px 0px;
-}
-
-.title-container img:hover{
-    transition: all 0.1s ease-in-out;
-    padding: 2px;
-    cursor: pointer;
-}
-.img-wrapper {
+-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,25 +243,33 @@ ul, a{
 
 .carousel-control-prev,
 .carousel-control-next{
-    background-color: #63636341;
+    background-color: #000000be;
     width: 6vh;
     height: 6vh;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
+    transition: all 1s ease-in-out;
 }
 
 .divEps {
-    padding-top: 1em;
+    padding: 1em 1em 0em 0em;
 }
 
 .divEps img{
+    transition: all 0.1s ease-in-out;
+    padding: 2px;
+    cursor: pointer;
     width: 100%;
     height: 27vh;
     border-radius: 1vh;
+    max-width: 100%;
 }
 
 .divEps img:hover{
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1.1);
     -webkit-filter: contrast(104%);
     -moz-filter: contrast(104%);
     -o-filter: contrast(104%);
@@ -267,10 +282,8 @@ ul, a{
     position: relative;
     display: inline-block;
 }
-
 .tamanho img {
-    width: 27vh;
-    height: 40vh;
+    height: 43vh;
     border-radius: 1vh;
 }
 
@@ -302,7 +315,7 @@ ul, a{
 }
 
 #btnTop:hover {
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: #2727279c;
 }
 
 .arrow {
@@ -337,7 +350,7 @@ ul, a{
         padding: 10px;
     }
     .tamanho {
-        height: 16vh;
+        height: 18vh;
     }
     .cell {
         height: 15vh;
@@ -348,7 +361,7 @@ ul, a{
     }
     .divEps img {
         width: 100%;
-        height: 15vh;
+        height: 12vh;
     }
 
     .rotate img {
