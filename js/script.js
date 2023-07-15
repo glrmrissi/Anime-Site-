@@ -24,13 +24,15 @@ btn.addEventListener("click", function(){
     window.scrollTo(0, 0)
 })
 
+
 function ocultar() {
     if (window.scrollY < 10) {
-        btn.style.display = "none";
+        btn.style.display = "none"
     } else {
-        btn.style.display = "flex";
+        btn.style.display = "flex"
     }
 }
-btn.style.transition = "opacity 0.3s ease";
 
-window.addEventListener("scroll", ocultar);
+btn.style.transform = "opacity 1s ease-in-out"
+
+window.addEventListener("scroll", ocultar)

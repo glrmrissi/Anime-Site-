@@ -14,6 +14,7 @@
 }
 
 body {
+    width: 100%;
     background: #e9e9e9;
     scroll-behavior: smooth;
     transition: 1s;
@@ -177,7 +178,9 @@ ul, a{
 .menu-mobile {
     display: none;
 }
-
+.cell img {
+    width: 100%;
+}
 .cell img:hover{  
     transition: all 0.1s ease-in-out;
     padding: 2px;
@@ -299,7 +302,7 @@ ul, a{
 }
 
 #btnTop:hover {
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.5);
 }
 
 .arrow {
@@ -328,7 +331,30 @@ ul, a{
 .page-footer {
     height: 30vh;
 }
+@media screen and (max-width: 992px) {
+    .nav-bar {
+        margin: 0px;
+        padding: 10px;
+    }
+    .tamanho {
+        height: 16vh;
+    }
+    .cell {
+        height: 15vh;
+    }
+    .cell img {
+        width: 100%;
+        height: 15vh;
+    }
+    .divEps img {
+        width: 100%;
+        height: 15vh;
+    }
 
+    .rotate img {
+        width: 70px;
+    }
+}
 @media screen and (max-width: 730px) {
     body {
         overflow-x: hidden;
@@ -375,13 +401,32 @@ ul, a{
 
 }
 
+
+
 @media screen and (max-width: 576px) {
+    body::-webkit-scrollbar {
+        padding: 0;
+        margin: 0;
+        width: 2px;
+        background-color: #ffffff00
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: #7777776a;
+        border-radius: 5px;  
+    }
+    .tamanho {
+        height: 452px;
+    }
     .cell {
+        display: block;
         width: 100%;
+        height: 10vh;
     }
     
     .cell img{
         width: 100%;
+        height: 450px;
     }
     .cell:not(:first-child) {
       display: none;
