@@ -353,7 +353,7 @@ ul, a{
         height: 18vh;
     }
     .cell {
-        height: 15vh;
+        height: 17vh;
     }
     .cell img {
         width: 100%;
@@ -414,8 +414,6 @@ ul, a{
 
 }
 
-
-
 @media screen and (max-width: 576px) {
     body::-webkit-scrollbar {
         padding: 0;
@@ -434,14 +432,21 @@ ul, a{
     .cell {
         display: block;
         width: 100%;
-        height: 10vh;
+        height: 137vh;
     }
-    
     .cell img{
         width: 100%;
         height: 450px;
     }
     .cell:not(:first-child) {
       display: none;
+    }
+    .divEps img {
+        width: 100%;
+        height: 20vh;
+    }
+    .divEps a {
+        width: 100%;
+        height: 20vh;
     }
 }
