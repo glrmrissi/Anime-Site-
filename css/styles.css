@@ -244,15 +244,22 @@ ul, a{
 .carousel-control-prev,
 .carousel-control-next{
     background-color: #000000be;
-    width: 6vh;
-    height: 6vh;
+    width: 4vh;
+    height: 4vh;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
     transition: all 1s ease-in-out;
 }
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 2vh;
+    height: 2vh;
+    color: #fff;
+}
 
-.divEps {
+.divEps oi{
+    margin: 0;
     padding: 1em 1em 0em 0em;
 }
 
@@ -311,12 +318,14 @@ ul, a{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 1s ease-in-out;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
 }
 
 #btnTop:hover {
     background-color: #2727279c;
 }
+
 
 .arrow {
     border: solid #FFF;
@@ -333,12 +342,12 @@ ul, a{
 
 .dark hr {
     color: #fff;
-    transition: tranform 1s linear;
+    transition: transform 1s linear;
 }
 
 .dark li {
     color: #fff;
-    transition: tranform 1s linear;
+    transition: transform 1s linear;
 }
 
 .page-footer {
@@ -383,6 +392,7 @@ ul, a{
     .menu-mobile-icon {
         display: flex;
         margin-left: 50px;
+        transition: all 1s ease-in-out;
     }
     .menu-mobile ul, a{
         display: flex;
@@ -410,6 +420,7 @@ ul, a{
         border-radius: 3vh;
         top: 0%;
         left: 40%;
+        transition: transform all 1s ease-in-out;
     }
 
 }
@@ -427,14 +438,17 @@ ul, a{
         border-radius: 5px;  
     }
     .tamanho {
+        border-radius: 1vh;
         height: 452px;
     }
     .cell {
+        border-radius: 1vh;
         display: block;
         width: 100%;
         height: 137vh;
     }
     .cell img{
+        border-radius: 1vh;
         width: 100%;
         height: 450px;
     }
@@ -442,8 +456,9 @@ ul, a{
       display: none;
     }
     .divEps img {
+        border-radius: 1vh;
         width: 100%;
-        height: 20vh;
+        height: 25vh;
     }
     .divEps a {
         width: 100%;

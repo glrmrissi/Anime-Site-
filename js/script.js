@@ -27,12 +27,12 @@ btn.addEventListener("click", function(){
 
 function ocultar() {
     if (window.scrollY < 10) {
-        btn.style.display = "none"
+        btn.style.visibility = "hidden";
+        btn.style.opacity = "0";
     } else {
-        btn.style.display = "flex"
+        btn.style.visibility = "visible";
+        btn.style.opacity = "1";
     }
 }
-
-btn.style.transform = "opacity 1s ease-in-out"
 
 window.addEventListener("scroll", ocultar)
