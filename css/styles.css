@@ -14,14 +14,18 @@
 }
 
 body {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(/img/capas/jujutsu-kaisen-capa-1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
     width: 100%;
-    background: #e9e9e9;
     scroll-behavior: smooth;
     transition: 1s;
 }
 
 body.dark {
-    background: #1d1d1d;
+    background-image: linear-gradient(rgba(8, 8, 8, 0.8), rgba(8, 8, 8, 0.8)), url(/img/capas/jujutsu-kaisen-capa-1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
     scroll-behavior: smooth;
     transition: 1s;
 }
@@ -149,7 +153,9 @@ ul, a{
     height: 26px;
     width: 50px;
     transform: scale(1.5);
+    transition: 1s;
 }
+
 
 .label .ball {
     background-color: #fff;
@@ -161,6 +167,11 @@ ul, a{
     width: 22px;
     transform: translateX(0px);
     transition: transform 0.2s linear;
+}
+
+.label.dark{
+    transition: 1s ease-in-out;
+    background-color: #dadada;
 }
 
 .fa-moon {
@@ -437,6 +448,7 @@ ul, a{
         background-color: #7777776a;
         border-radius: 5px;  
     }
+
     .tamanho {
         border-radius: 1vh;
         height: 452px;

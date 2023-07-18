@@ -18,6 +18,12 @@ chk.addEventListener('change', () => {
     navItem.classList.toggle('dark');
 })
 
+function toggleDarkMode() {
+    var labelElement = document.querySelector('.label');
+    labelElement.classList.toggle('dark');
+}
+
+
 let btn = document.getElementById('btnTop')
 
 btn.addEventListener("click", function(){
