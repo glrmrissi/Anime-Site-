@@ -80,9 +80,7 @@ ul, a{
 }
 
 .nav-item a:hover {
-    transform: scale();
     color: #1216c7;
-    font-size: 1.1rem;
 }
 
 .nav-item, .dark a {
@@ -94,9 +92,21 @@ ul, a{
 }
 
 .nav-item, .dark a:hover {
-    transform: scale();
     color: rgb(255, 255, 255);
-    font-size: 1.1rem;
+}
+
+.menuDropShow {
+    display: none;
+    width: 12vh;
+    padding: 5px 10px 5px 10px;
+    background-color: #585858;
+}
+
+.show {
+    display: inline-block;
+    position: absolute;
+    left: 130px;
+    top: 50px;
 }
 
 .rotate {
@@ -166,12 +176,23 @@ ul, a{
     height: 22px;
     width: 22px;
     transform: translateX(0px);
-    transition: transform 0.2s linear;
+    transition: transform 0.5s linear;
 }
 
 .label.dark{
     transition: 1s ease-in-out;
-    background-color: #dadada;
+    background-color: #ffffff;
+}
+.ball.dark{
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.5s linear;
 }
 
 .fa-moon {
@@ -336,7 +357,6 @@ ul, a{
 #btnTop:hover {
     background-color: #2727279c;
 }
-
 
 .arrow {
     border: solid #FFF;

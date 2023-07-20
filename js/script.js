@@ -1,3 +1,15 @@
+let aDrop = document.querySelector('.animes-open')
+let dropShow = document.querySelector('.menuDropShow')
+let linksDrop = document.querySelector('.nav-links')
+
+function menuDrop() {
+    if (dropShow.classList.contains('show')){
+        dropShow.classList.remove('show')
+    } else {
+        dropShow.classList.add('show')
+    }
+}
+
 function menuShow() {
     let menuMobile = document.querySelector('.menu-mobile')
     if (menuMobile.classList.contains('open')) {
@@ -19,8 +31,10 @@ chk.addEventListener('change', () => {
 })
 
 function toggleDarkMode() {
-    var labelElement = document.querySelector('.label');
+    var labelElement = document.querySelector('.label')
+    var ballElement = document.querySelector('.ball');
     labelElement.classList.toggle('dark');
+    ballElement.classList.toggle('dark')
 }
 
 
