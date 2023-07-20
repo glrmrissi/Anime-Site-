@@ -23,17 +23,20 @@ function menuShow() {
 
 const chk = document.getElementById('chk')
 const navItem = document.getElementById('nav-item')
+var backgroundElement = document.querySelector('.background');
 
 chk.addEventListener('change', () => {
-
     document.body.classList.toggle('dark');
+    backgroundElement.classList.toggle('dark')
     navItem.classList.toggle('dark');
 })
 
 function toggleDarkMode() {
     var labelElement = document.querySelector('.label')
     var ballElement = document.querySelector('.ball');
-    labelElement.classList.toggle('dark');
+    var backgroundElement = document.querySelector('.background');
+    backgroundElement.classList.toggle('dark')
+    labelElement.classList.toggle('dark')
     ballElement.classList.toggle('dark')
 }
 
