@@ -23,7 +23,7 @@ function menuShow() {
 
 const chk = document.getElementById('chk')
 const navItem = document.getElementById('nav-item')
-var backgroundElement = document.querySelector('.background');
+const backgroundElement = document.querySelector('.background');
 
 chk.addEventListener('change', () => {
     document.body.classList.toggle('dark');

@@ -78,6 +78,17 @@ ul, a{
     color: #000000;
     transition: 1s ease-in-out;
 }
+a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #000000;
+    transition: 1s ease-in-out;
+}
+
+a:hover {
+    color: #1216c7;
+}
 
 .nav-item a:hover {
     color: #1216c7;
@@ -97,11 +108,41 @@ ul, a{
 
 .menuDropShow {
     display: none;
+ 
     width: 12vh;
     padding: 5px 10px 5px 10px;
-    background-color: #585858;
+    height: 120px;
 }
 
+.menuDropShow .nav-links ul {
+    display: flex;
+
+    flex-direction: column;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
+
+.menuDropShow .nav-links li {
+    list-style: none;
+    width: 100%;
+    margin-bottom: 10px; 
+    height: 100%;
+}
+.nav-links {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.menuDropShow .nav-links a {
+    text-decoration: none;
+    color: #000; 
+}
+
+.menuDropShow .nav-links a:hover {
+    background-color: #1216c7;
+}
 .show {
     display: inline-block;
     position: absolute;
@@ -117,9 +158,14 @@ ul, a{
     align-items: center;
 }
 
+.background.dark{
+    background-color: #fff;
+}
+
 .background p {
     font-size: 1.1em;
 }
+
 
 
 
@@ -255,13 +301,6 @@ ul, a{
     cursor: pointer;
 }
 
--wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1em;
-    width: 100%;
-}
 
 .img-wrapper img {
     width: 100%;
