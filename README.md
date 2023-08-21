@@ -1,3 +1,7 @@
+#Pausa no projeto 21/08/2023
+
+
+
 # Site de Animes
 
 Sei que é meio tosco, porém irei tentar fazer algo para treinar minhas habilidades, que não são muitas.
