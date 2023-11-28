@@ -6,7 +6,9 @@
 
 
 body {
+    font-family: 'Poppins', sans-serif;
     background-color: #1a1919;
+    overflow-x: hidden;
 }
 
 p {
@@ -16,6 +18,11 @@ p {
 a {
     color: #fff;
 }
+
+h1 {
+    color: #fff;
+}
+
 
 .gnime_header {
     position: relative;
@@ -29,10 +36,14 @@ a {
 
 .grid_header {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 40%;
 }
 
-.nav__links{
+.title_anime {
+    color: rgb(55, 70, 209)
+}
+
+.nav__links {
     display: flex;
     height: 7vh;
     align-items: center;
@@ -50,11 +61,48 @@ a {
 .list__links li {
     padding-left: 1vh;
 }
+
+.list__links li a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+}
+
 .user__links {
     display: flex;
     align-items: center;
     justify-content: right;
     margin: 0 2vh 0 0;
+}
+
+.user__links svg {
+    margin: 0vh 0vh 0 6vh;
+    cursor: pointer;
+}
+
+.input__search {
+    display: flex;
+    width: 100%;
+}
+
+.input_1 {
+    width: 50%;
+    height: 3vh;
+    border-radius: 16px 0 0 16px;
+    margin: 0;
+    border: none;
+}
+
+.input_2 {
+    cursor: pointer;
+    background-color: rgb(55, 58, 255);
+    border: none;
+    width: 10%;
+    height: 3vh;
+    border-radius: 0 16px 16px 0;
+    background-image: url(/icons/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .sliders {
@@ -77,12 +125,27 @@ a {
     object-fit: cover;
 }
 
+.desc_page {
+    display: grid;
+    grid-template-columns: 50%;
+    height: 20vh;
+    align-items: center;
+    margin: 0;
+}
+
+.desc_div_1 {
+    display: flex;
+    align-items:last baseline;
+    height: 20vh;
+    margin: 0 0 0 8vh;
+}
+
 .animes_page {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
     width: 100%;
-    padding: 0 5vh 0 5vh;
+    padding: 0 20vh 0 20vh;
     background-color: #161616;
 }
 
@@ -96,23 +159,23 @@ a {
     display: flex;
     width: 100%;
     height: calc(100vh / 3);
-    padding: 1vh;
+    padding: 7px;
     background-color: rgb(34, 34, 34);
 }
 
 .animes_all {
     width: calc(100% / 4);
-    padding: 1vh;
+    padding: 0px 1vh 0 1vh;
     background-color: rgb(17, 17, 17);
 }
 
 .anime-img {
     width: 100%;
-    height: 20vh;
+    height: 100%;
 }
 
-.anime-img img{
+.anime-img img {
     width: 100%;
-    height: 30vh;
+    height: 100%;
     object-fit: cover;
 }
