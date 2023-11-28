@@ -1,3 +1,25 @@
+# Mudanças feitas:
+
+### Retirada do Bootstrap 5
+### Volta para o nativo
+### Design e Desenvolvimento
+
+<hr>
+
+# Em deselvonvimento:
+
+![Captura de tela 2023-11-28 005754](https://github.com/glrmrissi/Anime-Site-/assets/102769917/95e248ee-b932-4390-8d88-b245c01cddbd)
+
+
+# Antigo site:
+
+![Captura de tela 2023-11-28 005556](https://github.com/glrmrissi/Anime-Site-/assets/102769917/a494e904-38a3-4645-b535-e34723605487)
+
+![Captura de tela 2023-11-28 005616](https://github.com/glrmrissi/Anime-Site-/assets/102769917/ff4058a5-752d-4e03-9ba2-796eff0346d5)
+
+
+# Volta 28/11/2023
+
 # Pausa no projeto 21/08/2023
 
 
@@ -19,18 +41,6 @@ CSS é uma linguagem de estilo que complementa o HTML, permitindo a estilizaçã
 ## JavaScript
 
 JavaScript é uma linguagem de programação que permite adicionar interatividade e funcionalidades dinâmicas a um site. Minhas habilidades estão principalmente na manipulação do DOM, mas estou disposto a aprender mais sobre ela.
-## Bootstrap
 
-Bootstrap é uma biblioteca de estilos que fornece um conjunto de componentes e estilos predefinidos. Embora seja útil para agilizar o desenvolvimento, entendo que, para criar um site exclusivo, é necessário personalizar os estilos além do fornecido pelo Bootstrap.
-
-## PHP
-
-PHP é uma linguagem de programação amplamente utilizada para desenvolvimento web e gestão de dados em um servidor. Minha experiência com PHP é limitada, mas estou animado para aprender mais sobre sua aplicação e recursos.
-## MySQL
-
-MySQL é um sistema de gerenciamento de banco de dados usado para armazenar e recuperar informações em um servidor. Estou ansioso para aprender mais sobre como usar o MySQL para gerenciar dados em um projeto.
-## Apache
-
-O Apache é um servidor web amplamente utilizado que permite hospedar um site em um ambiente de desenvolvimento local ou em um servidor remoto. Embora eu não tenha muito conhecimento sobre a configuração do Apache, pretendo utilizá-lo neste projeto para aprender e aprimorar minhas habilidades de hospedagem e implantação de sites.
 
 Estou animado com esse projeto, pois ele me permitirá explorar e aprofundar meu conhecimento nas tecnologias mais utilizadas no desenvolvimento web.
