@@ -1,3 +1,8 @@
+:root {
+    --background-main: rgb(2, 4, 32);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +12,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #1a1919;
+    background-color: var(--background-main);
     overflow-x: hidden;
 }
 
@@ -23,14 +28,23 @@ h1 {
     color: #fff;
 }
 
+img {
+    object-fit: cover;
+}
+
+/* =========================================================================== */
+
+/* Header */
+
+/* =========================================================================== */
 
 .gnime_header {
-    position: relative;
+    position: fixed;
     left: 0;
     right: 0;
     top: 0;
     height: 7vh;
-    background-color: rgb(36, 31, 31);
+    background-color: rgba(36, 31, 31, 0);
     width: 100%;
 }
 
@@ -40,7 +54,7 @@ h1 {
 }
 
 .title_anime {
-    color: rgb(55, 70, 209)
+    color: rgb(58, 78, 255)
 }
 
 .nav__links {
@@ -91,39 +105,170 @@ h1 {
     border-radius: 16px 0 0 16px;
     margin: 0;
     border: none;
+    display: none;
 }
 
 .input_2 {
     cursor: pointer;
     background-color: rgb(55, 58, 255);
     border: none;
-    width: 10%;
+    width: 3vh;
     height: 3vh;
-    border-radius: 0 16px 16px 0;
+    border-radius: 16px;
+    align-items: right;
     background-image: url(/icons/search.svg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center center;
 }
 
+/* =========================================================================== */
+
+/* Carousel */
+
+/* =========================================================================== */
+
+.carousel {
+    background-color: aqua;
+    align-items: center;
+    width: 100%;
+    margin-top: 7vh;
+    height: 90vh;
+    overflow: hidden;
+
+}
+
+.carousel_elements {
+    width: 400%;
+    height: 90vh;
+    display: flex;
+}
+
+.carousel_elements input {
+    display: none;
+}
+
+.carousel_img {
+    width: 25%;
+    position: relative;
+}
+
+.carousel_img img {
+    width: 100%;
+    height: 90vh;
+}
+
+.manual_pass {
+    position: absolute;
+    width: 100%;
+    margin-top: -4vh;
+    display: flex;
+    justify-content: center;
+}
+
+.manual_btn {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 9px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.manual_btn:not(:last-child) {
+    margin-right: 5px;
+}
+
+.manual_btn:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+#radio1:checked~.first {
+    margin-left: 0;
+    transition: all .5s;
+}
+
+#radio2:checked~.first {
+    margin-left: -25%;
+    transition: all .5s;
+}
+
+#radio3:checked~.first {
+    margin-left: -50%;
+    transition: all .5s;
+}
+
+#radio4:checked~.first {
+    margin-left: -75%;
+    transition: all .5s;
+}
+
+.auto_pass {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    margin-top: -4vh;
+    justify-content: center;
+}
+
+.auto_pass div {
+    border: 2px solid rgba(255, 0, 0, 0);
+    padding: 5px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.auto_pass div:not(:last-child) {
+    margin-right: 5px;
+}
+
+
+#radio1:checked + .auto_pass .auto_btn1,
+#radio2:checked + .auto_pass .auto_btn2,
+#radio3:checked + .auto_pass .auto_btn3,
+#radio4:checked + .auto_pass .auto_btn4 {
+    background-color: white !important; 
+}
+/* =========================================================================== */
+
+/* Sliders */
+
+/* =========================================================================== */
 .sliders {
     display: flex;
     margin-top: 3vh;
-    height: 30vh;
+    height: 35vh;
     width: 100%;
     background-color: aquamarine;
 }
 
 .slide {
-    width: calc(100% / 5);
+    position: relative;
+    width: calc(100% / 7);
     background-color: rgb(103, 146, 132);
+    transition: all .7s;
+    z-index: 1;
 }
 
+.slide:hover {
+    width: 60vh;
+    transition: all .7s;
+    z-index: 2;
+}
+
+
 .imgs_slide img {
+    position: absolute;
     width: 100%;
-    height: 30vh;
+    height: 35vh;
     place-items: center;
     object-fit: cover;
 }
+
+/* =========================================================================== */
+
+/* CenterPage */
+
+/* =========================================================================== */
 
 .desc_page {
     display: grid;
@@ -135,42 +280,52 @@ h1 {
 
 .desc_div_1 {
     display: flex;
-    align-items:last baseline;
+    align-items: last baseline;
     height: 20vh;
-    margin: 0 0 0 8vh;
+    margin: 0 20vh 0 20vh;
 }
 
+.desc_div_1 a {
+    text-decoration: none;
+    color: #c7c7c7;
+    padding: 1vh;
+    margin-bottom: 1vh;
+    border-radius: 7px;
+    transition: all .4s;
+}
+
+.desc_div_1 a:hover {
+    color: #FFF;
+}
+
+
 .animes_page {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
     height: 100vh;
     width: 100%;
-    padding: 0 20vh 0 20vh;
-    background-color: #161616;
 }
 
 .animes {
     width: 100%;
     height: 100vh;
-    background-color: #1a1919;
 }
 
 .division_animes {
     display: flex;
     width: 100%;
-    height: calc(100vh / 3);
+    height: calc(75vh / 3);
     padding: 7px;
-    background-color: rgb(34, 34, 34);
 }
 
 .animes_all {
     width: calc(100% / 4);
     padding: 0px 1vh 0 1vh;
-    background-color: rgb(17, 17, 17);
 }
 
 .anime-img {
     width: 100%;
+    align-items: center;
     height: 100%;
 }
 
@@ -179,3 +334,5 @@ h1 {
     height: 100%;
     object-fit: cover;
 }
+
+/* =========================================================================== */
