@@ -44,8 +44,9 @@ img {
     right: 0;
     top: 0;
     height: 7vh;
-    background-color: rgba(36, 31, 31, 0);
+    background-color: rgba(37, 36, 36, 0.575);
     width: 100%;
+    z-index: 10;
 }
 
 .grid_header {
@@ -89,6 +90,7 @@ img {
     margin: 0 2vh 0 0;
 }
 
+
 .user__links svg {
     margin: 0vh 0vh 0 6vh;
     cursor: pointer;
@@ -96,6 +98,8 @@ img {
 
 .input__search {
     display: flex;
+    justify-content: right;
+    align-items: center;
     width: 100%;
 }
 
@@ -128,10 +132,10 @@ img {
 /* =========================================================================== */
 
 .carousel {
-    background-color: aqua;
+    background-color: rgb(0, 0, 0);
     align-items: center;
     width: 100%;
-    margin-top: 7vh;
+
     height: 90vh;
     overflow: hidden;
 
@@ -150,11 +154,14 @@ img {
 .carousel_img {
     width: 25%;
     position: relative;
+    object-fit: cover;
+    align-items: center;
 }
 
 .carousel_img img {
+    object-fit: cover;
     width: 100%;
-    height: 90vh;
+    height: 100%;
 }
 
 .manual_pass {
@@ -166,7 +173,8 @@ img {
 }
 
 .manual_btn {
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgba(255, 255, 255, 0);
+    background-color: #fff;
     padding: 5px;
     border-radius: 9px;
     transition: all .5s;
@@ -179,6 +187,13 @@ img {
 
 .manual_btn:hover {
     background-color: rgb(94, 94, 94);
+}
+
+#radio1:checked ~ .auto_pass .auto_btn1,
+#radio2:checked ~ .auto_pass .auto_btn2,
+#radio3:checked ~ .auto_pass .auto_btn3,
+#radio4:checked ~ .auto_pass .auto_btn4 {
+    background-color: white !important; 
 }
 
 #radio1:checked~.first {
@@ -222,12 +237,7 @@ img {
 }
 
 
-#radio1:checked + .auto_pass .auto_btn1,
-#radio2:checked + .auto_pass .auto_btn2,
-#radio3:checked + .auto_pass .auto_btn3,
-#radio4:checked + .auto_pass .auto_btn4 {
-    background-color: white !important; 
-}
+
 /* =========================================================================== */
 
 /* Sliders */
@@ -266,73 +276,14 @@ img {
 
 /* =========================================================================== */
 
-/* CenterPage */
+/* Animes */
 
 /* =========================================================================== */
 
-.desc_page {
-    display: grid;
-    grid-template-columns: 50%;
-    height: 20vh;
-    align-items: center;
-    margin: 0;
-}
-
-.desc_div_1 {
-    display: flex;
-    align-items: last baseline;
-    height: 20vh;
-    margin: 0 20vh 0 20vh;
-}
-
-.desc_div_1 a {
-    text-decoration: none;
-    color: #c7c7c7;
-    padding: 1vh;
-    margin-bottom: 1vh;
-    border-radius: 7px;
-    transition: all .4s;
-}
-
-.desc_div_1 a:hover {
-    color: #FFF;
-}
-
-
-.animes_page {
-    display: grid;
-    grid-template-columns: 10% 80% 10%;
-    height: 100vh;
-    width: 100%;
-}
-
-.animes {
-    width: 100%;
+.pages {
     height: 100vh;
 }
 
-.division_animes {
-    display: flex;
-    width: 100%;
-    height: calc(75vh / 3);
-    padding: 7px;
-}
 
-.animes_all {
-    width: calc(100% / 4);
-    padding: 0px 1vh 0 1vh;
-}
-
-.anime-img {
-    width: 100%;
-    align-items: center;
-    height: 100%;
-}
-
-.anime-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* =========================================================================== */
